@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="font-size: 18px; font-weight: bold; text-align: center"> 
+        Теги, которые стоит знать
+    </p>
+    <p style="font-size: 16px">
+       1) &lang;dl&rang; создаёт ассоциативный список из одного или нескольких элементов-терминов &lang;dt&rang;, сопровождаемого одним или более элементами-описаний &lang;dd&rang;. Закрывающиеся теги &lang;dt&rang; и &lang;dd&rang; могут присутствовать, но не обязательны.  
+    </p>
+    <dl style="text-align: center; font-style: italic; font-size: 16px">
+        <dt> Что такое FAQ?</dt>
+    <dt>Как называть FQA по-русски?</dt>
+    <dd><strong> FQA</strong>-страница с часто задаваемыми вопросами по какой-либо теме с ответами на них.</dd>
+    </dl>
+    <p style="font-size: 16px">
+    2) Элемент HTML &lang;pre&rang;  представляет собой предварительно отформатированный текст, который должен быть представлен точно так, как написано в HTML-файле. Текст обычно отображается с использованием непропорционального шрифта. Пробелы внутри этого элемента отображаются как записанные.
+    </p>
+    <pre style="text-align: center; font-style: italic; font-size: 16px">
+        L          TE
+          A       A
+            C    V
+             R A
+             DOU
+             LOU
+            REUSE
+            QUE TU
+            PORTES
+          ET QUI T'
+          ORNE O CI
+           VILISÉ
+          OTE-  TU VEUX
+           LA    BIEN
+          SI      RESPI
+                  RER       - Apollinaire
+      </pre>
+      <p style="font-size: 16px">
+    3) &lang;code&rang; предназначен для отображения одной или нескольких строк текста, который представляет собой программный код. Сюда относятся имена переменных, ключевые слова, тексты функции и т. д. Браузеры обычно отображают содержимое контейнера &lang;code&rang; как моноширинный текст уменьшенного размера.
+      </p> 
+      <p style="text-align: center; font-style: italic; font-size: 16px">Код программы</p>
+      <pre style="text-align: center; font-style: italic; font-size: 16px"><code>function checkParent (src, dest) {
+      while (src != null) {
+        if (src.tagName == dest) return src
+        src = src.parentElement
+      }
+      return null
+    }</code></pre>
+    <p style="font-size: 16px">
+    С помощью &lang;tt&rang; мы можем создать моноширинный текст 
+    </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px"> 
+        <tt> Всем привет! Меня зовут Ксюша!</tt>
+    </p>
+    <p style="font-size: 16px"> 
+        4) HTML-элемент &lang;kbd&rang; указывает на то, что текст внутри элемента  описывает пользовательский ввод с клавиатуры, голосовой ввод или ввод с использованием любого другого типа устройств ввода текста. 
+    </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px"> 
+        Используйте команду <kbd> Помощь</kbd>, чтобы настроить интерфейс.
+    </p>
+    <p style="font-size: 16px">
+        5) Элемент &lang;var&rang; используется для выделения переменных из компьютерных программ. Браузеры обычно помечают текст в контейнере &lang;var&rang; курсивным начертанием.
+    </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px">В данном примере делается запрос к базе данных для получения поля <var>content_title</var> 
+        из таблицы <var>content</var>, причем должно удовлетворяться условие 
+        <code>section_id = 1</code>.
+    </p>
+    <p style="font-size: 16px">
+        6) Элемент &lang;sup&rang; отображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и уменьшенного размера.<br>
+        
+        <b style="text-align: center; font-style: italic; font-size: 16px"> Великая теорема Ферма</b> <br>
+        <i> X <sup> <small>n</small></sup>+ Y <sup><small>n</small></sup>= Z <sup><small>n</small></sup></i><br>
+        где n - целое число >2
+    </p>
+    <p style="font-size: 16px">
+    Элемент &lang; sub &rang; отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии остальных символов строки и уменьшенного размера. </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px">O<sub><small>2</small></sub>, N<sub><small>2</small></sub>, Na<sub><small>2</small></sub></i>Cl </p>
+    <p style="font-size: 16px">
+    7) &lang;blockquote&rang; и &lang;q&rang; указывает на то, что заключённый в нем текст является развёрнутой цитатой.
+    </p>
+<blockquote style="text-align: center; font-style: italic; font-size: 16px">
+    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+</blockquote>
+<figcaption style="text-align: center; font-style: italic; font-size: 16px">—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+</figure>
+    <p style="font-size: 16px">
+        8) &lang;ins&rang; и &lang;del&rang; предназначены для выделения текста, который был добавлен в новую версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны.
+    </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px">Заметим, что схожий результат с Firefox показывает и браузер Opera, но, как видно на рис. 1, в последующих версиях <del>этот недостаток был устранен</del> <ins>подход разработчиков этого браузера был изменен</ins>.
+    </p> 
+    <p style="font-size: 16px">
+    9) &lang;address&rang; предназначен для хранения контактной информации автора (адрес, телефон, e-mail, ссылка на сайт и др.) и может включать в себя любые элементы HTML вроде ссылок, текста, выделений и т. д. Планируется, что поисковые системы будут анализировать содержимое этого элемента для сбора информации об авторах. 
+    <address style="text-align: center; font-style: italic; font-size: 16px">
+    Этот партал зделан сабствинаручно веб-дизайнером Ваней Шапочкиным в праграме 
+    Блакнот. Если вы хатите взять маи статьи к сибе на сайт то спрасите мае 
+    разришение.</address>
+    </p>
+    <p style="font-size: 16px">
+    10) &lang;nobr&rang; уведомляет браузер отображать текст без переносов. Без него текст выравнивается по левому краю окна браузера или родительского элемента. При этом браузер переводы строк расставляет автоматически, чтобы текст полностью поместился по ширине окна. Использование &lang;nobr&rang; заставляет отображать текст без переносов, одной строкой, что может привести к появлению горизонтальной полосы прокрутки. Пользователям придется прокручивать текст по горизонтали, чтобы увидеть его полностью.
+    <nobr style="text-align: center; font-style: italic; font-size: 16px">Целевая аудитория реально транслирует фирменный пул лояльных изданий. Раскрутка последовательно специфицирует рыночный product placement. Повышение жизненных стандартов, суммируя приведенные примеры, как всегда непредсказуемо. PR допускает имидж предприятия.</nobr>
+    </p>
+    <p style="font-size: 16px"> 
+    &lang;wbr&rang; указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.
+    </p>
+    <p style="text-align: center; font-style: italic; font-size: 16px">Самое длинное слово из химии</p>
+  <p style="text-align: center; font-style: italic; font-size: 16px">метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+</body>
+</html>
