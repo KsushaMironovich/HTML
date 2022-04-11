@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        .black {
+            position: absolute;
+            width: 1296px;
+            height: 40px;
+            left: 0px;
+            top: 0px;
+            background: #141414;
+        }
+
+        .margin {
+            margin-left: 79px;
+            margin-right: 79px;
+        }
+
+        .first_text {
+            position: absolute;
+            width: 449px;
+            height: 16px;
+            left: 424px;
+            top: 12px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+        }
+
+        .second_text {
+            position: absolute;
+            width: 449px;
+            height: 16px;
+            left: 424px;
+            top: 12px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+        }
+
+        .grey {
+            position: absolute;
+            width: 1296px;
+            height: 72px;
+            left: 0px;
+            top: 40px;
+            background: #C4C4C4;
+            opacity: 1;
+            /* делает все эелементы блока непрозрачными */
+        }
+
+        .wolf {
+            position: absolute;
+            width: 53px;
+            height: 60px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            background: url(wolf.png);
+            mix-blend-mode: multiply;
+            
+        }
+
+        .third_text {
+            position: absolute;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            margin-top: 24px;
+            margin-bottom: 23px;
+            margin-left: 60px;
+            /* текст не понимает, что марджин должен быть от картинки */
+            color: #000000;
+        }
+
+        .rectangle_1 {
+            position: absolute;
+            width: 540px;
+            height: 40px;
+            margin-bottom: 16px;
+            margin-top: 16px;
+            margin-left: 187px;
+            background: #FFFFFF;
+            border-radius: 31px;
+
+
+        }
+
+        .lupa {
+            position: absolute;
+            width: 22.5px;
+            height: 24px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 9px;
+            background: url(lupa.png);
+        }
+
+        .rectangle_text {
+            position: absolute;
+            width: 240px;
+            height: 22px;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            margin-left: 41px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #000000;
+            opacity: 0.5;
+        }
+
+        .white {
+            position: absolute;
+            width: 1296px;
+            height: 80px;
+            left: 0px;
+            top: 40px;
+            margin-top: 72px;
+            /* отталкивается от черного блока, а нужно от серого */
+            background: white;
+            opacity: 1;
+        }
+
+        .enumeration_2 {
+            position: static;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 200px;
+            margin-bottom: 29px;
+            display: inline;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #000000;
+            flex: none;
+            order: 1;
+            margin: 0px 32px;
+        }
+
+        .blue_rectangle {
+            position: absolute;
+            width: 145px;
+            height: 40px;
+            background: #0772BF;
+            border-radius: 4px;
+            opacity: 0.5;
+
+        }
+
+        .red {
+            position: static;
+            width: 32px;
+            height: 22px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: inline;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #FF0C0C;
+            flex: none;
+            order: 5;
+            flex-grow: 0;
+            margin: 0px 32px;
+
+        }
+
+        .banner {
+            position: absolute;
+            width: 1296px;
+            height: 464px;
+            left: 0px;
+            top: 192px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(banner.png);
+
+        }
+
+        .text_into_banner_1 {
+            position: absolute;
+            width: 660px;
+            height: 44px;
+            margin-top: 128px;
+            margin-left: 153px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+
+        }
+
+        .text_into_banner_2 {
+            position: absolute;
+            width: 656px;
+            height: 22px;
+            margin-top: 184px;
+            margin-left: 153px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        }
+
+        .white_rectangle {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding-left: 44px;
+            padding-right: 44px;
+            padding-top: 9px;
+            position: absolute;
+            width: 144px;
+            height: 40px;
+            margin-top: 255px;
+            margin-left: 151px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 36px;
+
+        }
+
+        .button_text {
+            position: static;
+            width: 56px;
+            height: 22px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 10px;
+
+
+        }
+
+        .enumeration_1 {
+            position: static;
+            width: 76px;
+            height: 19px;
+            margin-left: 67px;
+            margin-top: 71px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            display: inline;
+            align-items: center;
+            text-align: right;
+            color: #000000;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="black">
+        <div class="second_text">Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. Read more </div>
+    </div>
+    <div class="grey">
+        <div class="margin">
+            <div class="wolf"></div>
+            <div class="third_text"> Wolf House</div>
+            <div class="rectangle_1">
+                <div class="lupa"></div>
+                <div class="rectangle_text"> Search brands, gear and guides</div>
+            </div>
+            <div class="enumeration_1">
+                <ul type="none">
+                    <li class="enumeration_1">En <img src="flag.png"></li>
+                    <li class="enumeration_1">My account</li>
+                    <li class="enumeration_1">USD</li>
+                    <li class="enumeration_1"> <img src="basket.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <ul type="none">
+            <div class="blue_rectangle"></div>
+            <li class="enumeration_2">Categories</li>
+            <li class="enumeration_2"> Ski boots</li>
+            <li class="enumeration_2"> Ski accessories</li>
+            <li class="enumeration_2"> Apparel</li>
+            <li class="enumeration_2"> Snowboard shop</li>
+            <li class="enumeration_2"> Brands</li>
+            <li class="red"> Sale</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="text_into_banner_1">New ATOMIC collection with nano-techs.</div>
+        <div class="text_into_banner_2">Check our new 2021 collection for freeride.</div>
+        <div class="white_rectangle">
+            <div class="button_text"> Button</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
