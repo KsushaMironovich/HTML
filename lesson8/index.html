@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   tr:nth-child(3) {
+       background-color: crimson;
+   }
+   tr:nth-child(1) {
+       background-color: brown;
+   }
+   tr:nth-child(2){
+       background-color: chartreuse;
+   }
+   td:nth-child(2){
+       background-color: coral;
+   }
+   td:nth-child(3){
+       background-color: cadetblue;
+   }  /* не перекрашивается в нужный цвет */
+  div em{
+      color: violet;
+  }
+  ul em{
+      color: green;
+  }
+  p strong{
+      color: aqua;
+  }
+  p i{
+      color: grey;
+  }
+  li strong{
+      color: chocolate;
+  }
+  li em{
+      color: orange;
+  }
+  li span{
+      color: indigo;
+  }
+  div ul li span em{
+      color: green;
+  }
+
+</style>
+<body>
+    <div>
+        <div>
+            <table border="1" style="border-collapse: collapse">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">5</td>
+                    
+                </tr>
+            </table>
+        </div>
+        <ul type="none">
+            <li>
+                <p> <a> hello</a> </p>
+            </li>
+            <li>
+                <span>
+                    <em> <a>hello</a> </em>
+                </span>
+            </li>
+            <li>
+                <p> <a>hello</a> </p>
+            </li>
+            <li> <a>hello</a> </li>
+        </ul>
+        <p>
+            <span>
+                <em> <a>hello</a>  </em>
+            </span>
+        </p>
+    </div>
+    <p>
+        <strong>
+            <a>hello</a>
+        </strong> <br>
+        <i>
+            <a>hello</a>
+        </i>
+    </p>
+    <ul type="none">
+        <li>
+            <span> hello</span>
+        </li>
+        <li>
+            <em>
+                <a>hello</a>
+            </em>
+        </li>
+        <li>
+            <strong> hello</strong>
+        </li>
+    </ul>
+</body>
+</html>
