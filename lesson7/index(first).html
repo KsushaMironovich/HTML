@@ -12,11 +12,9 @@
         rel="stylesheet">
     <style>
         .black {
-            position: absolute;
+
             width: 1296px;
             height: 40px;
-            left: 0px;
-            top: 0px;
             background: #141414;
         }
 
@@ -26,29 +24,23 @@
         }
 
         .first_text {
-            position: absolute;
+
             width: 449px;
             height: 16px;
-            left: 424px;
-            top: 12px;
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 600;
             font-size: 12px;
-            line-height: 16px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.03em;
+            align: center;
             color: #FFFFFF;
         }
 
         .second_text {
-            position: absolute;
+
             width: 449px;
             height: 16px;
-            left: 424px;
-            top: 12px;
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
@@ -62,45 +54,48 @@
         }
 
         .grey {
-            position: absolute;
+
             width: 1296px;
             height: 72px;
-            left: 0px;
-            top: 40px;
+            margin-top: 0px;
             background: #C4C4C4;
             opacity: 1;
             /* делает все эелементы блока непрозрачными */
         }
 
         .wolf {
-            position: absolute;
+
             width: 53px;
             height: 60px;
             margin-top: 6px;
             margin-bottom: 6px;
             background: url(wolf.png);
             mix-blend-mode: multiply;
+            display: inline;
+            float: left;
 
         }
 
         .third_text {
-            position: absolute;
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.01em;
-            margin-top: 24px;
+            
+            
+            
+            margin-top: 1px;
             margin-bottom: 23px;
             margin-left: 60px;
             /* текст не понимает, что марджин должен быть от картинки */
             color: #000000;
+            display: inline;
+            float: left;
         }
 
         .rectangle_1 {
-            position: absolute;
+
             width: 540px;
             height: 40px;
             margin-bottom: 16px;
@@ -108,12 +103,14 @@
             margin-left: 187px;
             background: #FFFFFF;
             border-radius: 31px;
+            display: inline;
+            float: left;
 
 
         }
 
         .lupa {
-            position: absolute;
+
             width: 22.5px;
             height: 24px;
             margin-top: 8px;
@@ -123,7 +120,7 @@
         }
 
         .rectangle_text {
-            position: absolute;
+
             width: 240px;
             height: 22px;
             margin-top: 9px;
@@ -133,20 +130,18 @@
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 22px;
-            display: flex;
+            
             align-items: center;
-            letter-spacing: 0.01em;
+            
             color: #000000;
             opacity: 0.5;
         }
 
         .white {
-            position: absolute;
+
             width: 1296px;
             height: 80px;
-            left: 0px;
-            top: 40px;
+           
             margin-top: 72px;
             /* отталкивается от черного блока, а нужно от серого */
             background: white;
@@ -154,7 +149,7 @@
         }
 
         .enumeration_2 {
-            position: static;
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
@@ -162,17 +157,17 @@
             margin-top: 200px;
             margin-bottom: 29px;
             display: inline;
-            align-items: center;
+         
             text-align: center;
             letter-spacing: 0.01em;
             color: #000000;
-            flex: none;
+            
             order: 1;
             margin: 0px 32px;
         }
 
         .blue_rectangle {
-            position: absolute;
+
             width: 145px;
             height: 40px;
             background: #0772BF;
@@ -182,7 +177,7 @@
         }
 
         .red {
-            position: static;
+
             width: 32px;
             height: 22px;
             font-family: 'Open Sans';
@@ -203,7 +198,7 @@
         }
 
         .banner {
-            position: absolute;
+
             width: 1296px;
             height: 464px;
             left: 0px;
@@ -213,7 +208,7 @@
         }
 
         .text_into_banner_1 {
-            position: absolute;
+
             width: 660px;
             height: 44px;
             margin-top: 128px;
@@ -231,7 +226,7 @@
         }
 
         .text_into_banner_2 {
-            position: absolute;
+
             width: 656px;
             height: 22px;
             margin-top: 184px;
@@ -264,7 +259,7 @@
         }
 
         .button_text {
-            position: static;
+
             width: 56px;
             height: 22px;
             font-family: 'Open Sans';
@@ -286,7 +281,7 @@
         }
 
         .enumeration_1 {
-            position: static;
+
             width: 76px;
             height: 19px;
             margin-left: 67px;
@@ -343,8 +338,8 @@
         }
 
         .line {
-            
-            
+
+
             left: 80px;
             top: 1120px;
 
@@ -356,7 +351,7 @@
 <body>
 
     <div class="black">
-        <div class="second_text">Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. Read more </div>
+        <div class="first_text">Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. Read more </div>
     </div>
     <div class="grey">
         <div class="margin">
