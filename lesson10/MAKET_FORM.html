@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <form method="get" action="Search.php">
+            Название статьи:<br>
+            <input type="text" name="name">
+        </form>
+        <form method="get" action="Search.php">
+            Рубрика:<br>
+            <select name="work">
+                <option value="1">программирование</option>
+                <option value="2">дизайн</option>
+                <option value="3">бизнес-аналитика</option>
+            </select><br>
+        </form>
+        <form method="get" action="Search.php">
+            Публикация:<br>
+            <input type="radio" name="answer" value="4">на сайте<br>
+            <input type="radio" name="answer" value="5">в журнале<br>
+            <input type="radio" name="answer" value="6">на сайте и в журнале<br>
+        </form>
+        <form method="get" action="Search.php">
+            Разрешить комментарий: <input type="checkbox" name="omlynew"><br>
+
+        </form>
+        <form method="get" action="Search.php">
+            Текст статьи:<br>
+            <textarea name="mytext"></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
