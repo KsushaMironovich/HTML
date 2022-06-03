@@ -15,22 +15,24 @@
     var through = prompt ('через 5 лет вам будет');
     var sex =  confirm ('ваш пол');
     if (sex==true) {
-        alert ('мужской');
-    }
-    else 
-    alert ('женский');
+        sex = 'женский'
+         } else {
+             sex = 'мужской'
+         }
+   
     var work = confirm ('вы на пенсии');
-    if (sex==true) {
-        alert ('да');
+    if (work==true) {
+        work='да'}
+    else {
+        work='нет'
     }
-    else 
-    alert ('нет');
-    // alert ('ваше ФИО:' + 'name';
-    // 'ваш возраст в годах:' + 'name';
-    // 'ваш возраст в днях:' + 'name';
-    // 'через 5 лет вам будет:' + 'name';
-    // 'ваш пол:' + 'name';
-    // 'вы на пенсии:' + 'name')
+    
+    alert ('ваше ФИО:' + name + "\n" +
+    'ваш возраст в годах:' + years + "\n" +
+    'ваш возраст в днях:' + days + "\n" +
+    'через 5 лет вам будет:' + through + "\n" +
+    'ваш пол:' + sex + "\n" +
+    'вы на пенсии:' + work)
 </script>
 </body>
 </html>
