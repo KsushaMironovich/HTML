@@ -63,19 +63,18 @@
 
         }
 
-        /* .picture {
+        .picture {
             float: left;
-
-            image: url(1.png);
-            width: 40%;
+            background: url(1.png);
+            /* width: 40%; */
             height: 133px;
             background-repeat: no-repeat;
-        } */
+        }
 
         .text {
             font-weight: normal;
             padding: 10px;
-            padding-left: 500px;
+            padding-left: 450px;
         
         }
 
@@ -93,6 +92,19 @@
         .goodbye{
             text-align: center;
             color: blue
+        }
+        @media all and (max-width: 900px) {
+            .menu {
+                height: 500px;
+            }
+        }
+        @media all and (max-width: 681px){
+            .menu{
+                height: 700px;
+            }
+            .text{
+                padding-left: 20px;
+            }
         }
     </style>
 </head>
@@ -129,7 +141,7 @@
     </div>
     <div class="content">
         <div class="football">ФУТБОЛ</div>
-        <div> <img src="1.png" style="float: left;"></div>
+        <div class="picture"> </div>
         <div class="text">Футбол-комадный вид спорта, в котором целью является забить мяч в ворота
             соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника. <br>
             <br> Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
