@@ -12,10 +12,10 @@
 
     <form method="post" action="Search.php">
         Для публикации вашей статьи заполните, пожалуйста, следующую форму: <br> <br>
-       <div style="display: block;"> Название статьи:</div> 
-        <div style="margin-left: 20px;">
-            <input type="Name" style="width: 100%; float: left;"> <br>
-        </div>
+    <div style="display: inline-block;">Название статьи:</div>
+        <div style="margin-left: 100px; margin-right: 25px;">
+            <input type="Name" style="width: 100%; ">
+        </div> <br>
         Рубрика:
         <select name="choise">
             <option value="1">программирование</option>
@@ -29,7 +29,9 @@
         Разрешить комментарии:
         <input type="checkbox" name="onlynew"><br>
         Текст статьи:<br>
-        <textarea name="mytext"></textarea><br>
+        <div style="margin-left: 100px; margin-right: 25px;">
+            <textarea name="mytext" style="width: 100%;"></textarea>
+        </div> <br>
         <input type="submit" value="Опубликовать">
 
     </form>
