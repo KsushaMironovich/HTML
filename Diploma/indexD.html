@@ -31,15 +31,16 @@
         }
 
         .container {
-            margin-left: 96px;
-            margin-right: 96px;
+            padding-left: 96px;
+            padding-right: 96px;
+            width: 100%;
 
         }
 
         .content {
 
             width: 100%;
-            height: 2954px;
+
             background: white;
 
         }
@@ -54,7 +55,7 @@
 
         .enumeration_1 {
 
-            width: 556px;
+
             height: 25px;
             left: 99px;
             top: 28px;
@@ -88,7 +89,7 @@
         }
 
         .logo_green {
-            position: absolute;
+
             width: 148px;
             height: 53px;
             left: 100px;
@@ -100,7 +101,7 @@
         .search {
             box-sizing: border-box;
 
-            position: absolute;
+
             width: 727px;
             height: 48px;
             left: 321px;
@@ -113,7 +114,7 @@
 
         .enumeration_3 {
 
-            width: 733.98px;
+
             height: 36.62px;
             left: 100px;
             top: 250px;
@@ -142,14 +143,11 @@
 
         .banner {
 
-
-            background-repeat: no-repeat;
-            position: absolute;
             width: 100%;
             height: 753px;
             left: -8px;
             top: 237px;
-            background: url(image/Banner.png)
+            background: url(image/Banner.png) center center/cover no-repeat;
         }
 
         .text_1 {
@@ -177,7 +175,7 @@
 
         .card_1 {
 
-            position: absolute;
+
             width: 285px;
             height: 555px;
 
@@ -189,25 +187,22 @@
         }
 
         .star {
-            position: absolute;
-            left: 5.61%;
-            right: 85.26%;
-            top: 4.5%;
-            bottom: 90.81%;
+            width: 50px;
+            height: 50px;
 
-            background: #669966;
+            display: inline-block;
             opacity: 0.5;
-            background-image: url(image/Star.png);
+            background: url(image/Star.png) center center/cover no-repeat;
 
         }
 
         .number {
-            position: absolute;
+
             left: 16.84%;
             right: 74.04%;
             top: 4.68%;
             bottom: 90.63%;
-
+            display: inline;
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
@@ -220,22 +215,18 @@
         }
 
         .heart {
-            box-sizing: border-box;
 
-            position: absolute;
-            left: 84.21%;
-            right: 5.61%;
-            top: 4.32%;
-            bottom: 91.08%;
 
-            background: #999999;
+
+
             opacity: 0.6;
-            border: 1px solid #000000;
-            background-image: url(image/Heart.png);
+            width: 50px;
+            height: 50px;
+            background: url(image/Heart.png) center center/cover no-repeat;
         }
 
         .img_tea {
-            position: absolute;
+
             left: 21.45%;
             right: 21.78%;
             top: 13.69%;
@@ -244,7 +235,7 @@
         }
 
         .name_tea {
-            position: absolute;
+
             left: 8.07%;
             right: 58.25%;
             top: 48.47%;
@@ -262,7 +253,7 @@
         }
 
         .text_tea {
-            position: absolute;
+
             left: 8.07%;
             right: 8.07%;
             top: 60.9%;
@@ -279,7 +270,7 @@
         }
 
         .price {
-            position: absolute;
+
             left: 8.07%;
             right: 44.91%;
             top: 74.95%;
@@ -296,8 +287,8 @@
             color: #3F3F3F;
         }
 
-        .botton {
-            position: absolute;
+        .button {
+
             left: 8.07%;
             right: 8.07%;
             top: 84.32%;
@@ -307,8 +298,8 @@
             border-radius: 42px;
         }
 
-        .botton_text {
-         
+        .button_text {
+
             left: 34.39%;
             right: 34.39%;
             top: 86.85%;
@@ -331,26 +322,31 @@
     <div class="parent">
         <div class="header">
             <div class="container">
-                <ul type="none" style="margin-top: 28px;">
-                    <li class="enumeration_1">Доставка и оплата</li>
-                    <li class="enumeration_1">Отзывы</li>
-                    <li class="enumeration_1">О магазине</li>
-                    <li class="enumeration_1">Контакты</li>
-                </ul>
-                <!-- <ul type="none" style="margin-top: 28px;">
-                    <li class="enumeration_2 ">Вход</li>
-                    <li class="enumeration_2 ">Регистрация</li>
-                    <li></li>
-                    <li></li>
-                </ul> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <ul type="none" style="margin-top: 28px; display: flex; gap: 20px;">
+                        <li class="enumeration_1">Доставка и оплата</li>
+                        <li class="enumeration_1">Отзывы</li>
+                        <li class="enumeration_1">О магазине</li>
+                        <li class="enumeration_1">Контакты</li>
+                    </ul>
+                    <ul type="none" style="margin-top: 28px; display: flex; gap: 20px;">
+                        <li class="enumeration_2 ">Вход</li>
+                        <li class="enumeration_2 ">Регистрация</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="container">
-                <div class="logo_green"></div>
-                <div class="search"></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 20px;">
+                    <div class="logo_green"></div>
+                    <div class="search"></div>
+                    <div>+375 (29) 765 45 65</div>
+                </div>
                 <div>
-                    <ul type="none" style="margin-top: 30px;">
+                    <ul type="none" style="margin-top: 30px; display: flex; gap: 100px;">
                         <li class="enumeration_3">Чай</li>
                         <li class="enumeration_3">Кофе</li>
                         <li class="enumeration_3">Сладкое</li>
@@ -366,16 +362,21 @@
             <div class="container">
                 <div class="text_1">Лучшие товары</div>
                 <div class="card_1">
-                    <div class="star"></div>
-                    <div class="number">4.7</div>
-                    <div class="heart"></div>
-                    <div class="img_tea"></div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="star"></div>
+                            <div class="number">4.7</div>
+                        </div>
+                        <div class="heart"></div>
+                    </div>
+<div style="display: flex; justify-content: center;">
+                    <img src="image/Tea_1.png" ></div>
                     <div class="name_tea">Шоу Мэй </div>
                     <div class="text_tea">Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.
                     </div>
                     <div class="price">100 гр. / 15 BYR</div>
-                    <div class="botton">
-                        <div class="botton_text">В корзину</div>
+                    <div class="button">
+                        <div class="button_text">В корзину</div>
                     </div>
 
 
