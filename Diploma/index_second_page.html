@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column
+        }
+
+        .header {
+
+            width: 100%;
+            height: 81px;
+            background: #669966;
+            display: flex;
+            flex-direction: row
+        }
+
+        .container {
+            padding-left: 96px;
+            padding-right: 96px;
+            width: 100%;
+
+        }
+
+        .content {
+
+            width: 100%;
+
+            background: white;
+
+        }
+
+        .footer {
+
+            width: 100%;
+            height: 396px;
+            background: #669966;
+
+        }
+
+        .enumeration_1 {
+
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #DFDFDF;
+            display: inline;
+            padding-right: 50px;
+
+
+
+        }
+
+        .enumeration_2 {
+
+            padding-left: 15px;
+            padding-right: 25px;
+            display: inline;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+
+        }
+
+        .exit {
+
+
+
+            display: inline;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            padding-right: 15px;
+
+        }
+
+        .logo_green {
+
+            width: 148px;
+            height: 53px;
+            left: 100px;
+            top: 134px;
+            background: url(image/Logo_green.png);
+
+        }
+
+        .search {
+            box-sizing: border-box;
+
+
+            width: 727px;
+            height: 48px;
+            left: 321px;
+            top: 149px;
+
+            background: #F3F3F3;
+
+            border-radius: 47px;
+        }
+
+        .enumeration_3 {
+
+
+            height: 36.62px;
+            left: 100px;
+            top: 250px;
+            display: inline;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 29px;
+
+            color: #636363;
+
+        }
+
+        .rectangle {
+
+            width: 734px;
+            height: 4px;
+            margin-top: 12px;
+
+            background: #F6F6F6;
+            border-radius: 26px;
+        }
+
+        .banner {
+
+            width: 100%;
+            height: 753px;
+            margin-top: 64px;
+            background: url(image/Banner.png) center center/cover no-repeat;
+        }
+
+        .text_1 {
+
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 45px;
+
+
+            text-align: center;
+
+            color: #3F3F3F;
+            padding-top: 100px;
+            padding-bottom: 25px;
+        }
+
+        .content {
+            background-color: #FFFFFF;
+        }
+
+        .card_1 {
+
+
+            width: 285px;
+            height: 555px;
+
+            background: #FFFFFF;
+            /* Shadow 1 */
+
+            box-shadow: -10px -10px 20px rgba(245, 245, 245, 0.7), 10px 10px 20px rgba(245, 245, 245, 0.7);
+            border-radius: 20px;
+        }
+
+        .star {
+            width: 50px;
+            height: 50px;
+
+            display: inline-block;
+            opacity: 0.5;
+            background: url(image/Star.png) center center/cover no-repeat;
+
+        }
+
+        .number {
+
+            left: 16.84%;
+            right: 74.04%;
+            top: 4.68%;
+            bottom: 90.63%;
+            display: inline;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+
+            color: #999999;
+
+            opacity: 0.6;
+        }
+
+        .heart {
+
+
+
+
+            opacity: 0.6;
+            width: 50px;
+            height: 50px;
+            background: url(image/Heart.png) center center/cover no-repeat;
+        }
+
+        .img_tea {
+
+            left: 21.45%;
+            right: 21.78%;
+            top: 13.69%;
+            bottom: 58.68%;
+            background-image: url(image/Tea_1.png);
+        }
+
+        .name_tea {
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 29px;
+            margin-left: 19px;
+            color: #3F3F3F;
+            margin-bottom: 16px;
+        }
+
+        .text_tea {
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            margin-left: 19px;
+            margin-bottom: 19px;
+            margin-right: 23px;
+            color: #999999;
+
+        }
+
+        .price {
+
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            margin-left: 19px;
+            color: #3F3F3F;
+            margin-bottom: 27px;
+        }
+
+        .button {
+            margin-left: 19px;
+            height: 53px;
+            width: 239px;
+            background: #669966;
+            border-radius: 42px;
+        }
+
+        .button_text {
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+
+            padding-left: 75px;
+            padding-top: 14px;
+
+
+            color: #FFFFFF;
+        }
+
+        .banner_2 {
+            width: 100%;
+            height: 466px;
+
+            background: url(image/Banner_2.png) center center/cover no-repeat;
+        }
+
+        .arrow_left {
+            background: #696969;
+            padding-left: 82px;
+        }
+
+        .arrow_right {
+            background: #696969;
+            padding-left: 82px;
+
+        }
+
+        .block {
+
+            width: 1px;
+            height: 18px;
+
+
+            background: #D0D0D0;
+            border-radius: 3px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        .search_text {
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #AEAEAE;
+            padding-left: 26px;
+            padding-top: 13px;
+        }
+
+        .shy_pyer {
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 54px;
+            padding-top: 137px;
+            padding-left: 300px;
+
+            color: #3F3F3F;
+        }
+
+        .banner_text {
+
+            padding-top: 23px;
+            padding-left: 300px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+
+
+            color: #999999;
+        }
+
+        .green {
+
+            width: 305px;
+            height: 53px;
+
+
+            background: #669966;
+            border-radius: 42px;
+            margin-left: 300px;
+            margin-top: 45px;
+
+        }
+
+        .green_text {
+
+
+            padding-top: 14px;
+            padding-left: 74px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+
+            color: #FFFFFF;
+
+        }
+
+        .banenr_2_text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
+
+            color: #3F3F3F;
+            padding-top: 100px;
+            padding-left: 200px;
+        }
+
+        .banner_2_rectangel_white {
+
+            width: 434.83px;
+            height: 53px;
+            background: #FFFFFF;
+            border-radius: 42px;
+            margin-top: 129px;
+            margin-left: 200px;
+        }
+
+        .banner_2_rectangel_white_text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #DBDBDB;
+            padding-top: 14px;
+            padding-left: 56px;
+
+
+        }
+
+        .banner_2_rectangel_green {
+
+            width: 204.16px;
+            height: 53px;
+            background: #669966;
+            border-radius: 42px;
+
+        }
+
+        .banner_2_rectangel_green_text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+
+        }
+
+        .white_logo {
+
+
+            width: 160.97px;
+            height: 53.57px;
+            background-color: #FFFFFF;
+            background-image: url(image/Logo_white.png);
+        }
+
+        .input {
+            box-sizing: border-box;
+
+            
+            width: 20px;
+            height: 20px;
+            border: 1px solid #B3B3B3;
+            border-radius: 3px;
+        }
+    </style>
+
+    <div class="parent">
+        <div class="header">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <ul type="none" style="margin-top: 28px; display: flex; gap: 20px;">
+                        <li class="enumeration_1">Доставка и оплата</li>
+                        <li class="enumeration_1">Отзывы</li>
+                        <li class="enumeration_1">О магазине</li>
+                        <li class="enumeration_1">Контакты</li>
+                    </ul>
+                    <ul type="none" style="margin-top: 28px; display: flex; gap: 20px;">
+                        <li class="exit">Вход</li>
+                        <li class="block"></li>
+                        <li class="enumeration_2 ">Регистрация</li>
+
+                        <li><img src="image/basket.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 52px;">
+                    <div class="logo_green"></div>
+                    <div class="search">
+                        <div class="search_text">Поиск</div>
+                    </div>
+                    <img src="image/Phone.png">
+                    <div>+375 (29) 765 45 65</div>
+                </div>
+                <div>
+                    <ul type="none" style="padding-top: 53px; display: flex; gap: 100px;">
+                        <li class="enumeration_3">Чай</li>
+                        <li class="enumeration_3">Кофе</li>
+                        <li class="enumeration_3">Сладкое</li>
+                        <li class="enumeration_3">Наборы</li>
+                        <li class="enumeration_3">Акции</li>
+                    </ul>
+                </div>
+                <div class="rectangle"></div>
+                <div>
+                    <ul type="none"> Категория
+                        <li><input type="checkbox"> Черный</li>
+                        <li><input type="checkbox"> Белый</li>
+                        <li><input type="checkbox"> Зеленый</li>
+                        <li><input type="checkbox"> Красный</li>
+                        <li><input type="checkbox"> Желтый</li>
+                        <li><input type="checkbox"> Фруктовый</li>
+                        <li><input type="checkbox"> Травяной</li>
+                    </ul>
+                    <ul type="none"> Страна
+                        <li><input type="checkbox"> Индия</li>
+                        <li><input type="checkbox"> Китай</li>
+                        <li><input type="checkbox"> Сингапур</li>
+                        <li><input type="checkbox"> Брюсель</li>
+                        <li><input type="checkbox"> Англия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div> <img src="image/Logo_white.png" style="padding-top: 70px; padding-left: 90px;"> </div>
+            <ul type="none" style="padding-top: 115px; padding-left:90px; display: flex; gap: 15px;">
+                <li><img src="image/Instagram.png"></li>
+                <li><img src="image/Twitter.png"></li>
+                <li><img src="image/YouTube.png"></li>
+                <li><img src="image/Facebook.png"></li>
+            </ul>
+            <ul type="none" style="padding-top: 65px; padding-left:90px;"> Информация
+                <li>Доставка и оплата</li>
+                <li>Отзывы</li>
+                <li>О магазине</li>
+                <li>Контакты</li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
