@@ -147,11 +147,31 @@
         .rectangle {
 
             width: 734px;
-            height: 4px;
+            height: 18px;
             margin-top: 12px;
 
             background: #F6F6F6;
             border-radius: 26px;
+        }
+
+        .rectangle_green {
+            width: 41px;
+            height: 18px;
+            /* margin-top: 12px; */
+
+            background: #669966;
+            border-radius: 26px;
+
+        }
+
+        .tea {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 45px;
+            color: #3F3F3F;
+
         }
 
         .banner {
@@ -474,11 +494,39 @@
         .input {
             box-sizing: border-box;
 
-            
+
             width: 20px;
             height: 20px;
             border: 1px solid #B3B3B3;
             border-radius: 3px;
+        }
+
+        .cost {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 29px;
+            color: #636363;
+        }
+
+        .category {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 29px;
+            color: #636363;
+        }
+
+        .in_category {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #636363;
+
         }
     </style>
 
@@ -522,41 +570,77 @@
                     </ul>
                 </div>
                 <div class="rectangle"></div>
+                <div class="rectangle_green"></div>
+                <div class="tea">ЧАЙ</div>
+                <div class="cost">Цена</div>
                 <div>
-                    <ul type="none"> Категория
-                        <li><input type="checkbox"> Черный</li>
-                        <li><input type="checkbox"> Белый</li>
-                        <li><input type="checkbox"> Зеленый</li>
-                        <li><input type="checkbox"> Красный</li>
-                        <li><input type="checkbox"> Желтый</li>
-                        <li><input type="checkbox"> Фруктовый</li>
-                        <li><input type="checkbox"> Травяной</li>
+                    <ul type="none" class="category" style="padding-bottom: 49px;"> Категория
+                        <li class="in_category"><input type="checkbox"> Черный</li>
+                        <li class="in_category"><input type="checkbox"> Белый</li>
+                        <li class="in_category"><input type="checkbox"> Зеленый</li>
+                        <li class="in_category"><input type="checkbox"> Красный</li>
+                        <li class="in_category"><input type="checkbox"> Желтый</li>
+                        <li class="in_category"><input type="checkbox"> Фруктовый</li>
+                        <li class="in_category"><input type="checkbox"> Травяной</li>
                     </ul>
-                    <ul type="none"> Страна
-                        <li><input type="checkbox"> Индия</li>
-                        <li><input type="checkbox"> Китай</li>
-                        <li><input type="checkbox"> Сингапур</li>
-                        <li><input type="checkbox"> Брюсель</li>
-                        <li><input type="checkbox"> Англия</li>
+                    <ul type="none" class="category"> Страна
+                        <li class="in_category"><input type="checkbox"> Индия</li>
+                        <li class="in_category"><input type="checkbox"> Китай</li>
+                        <li class="in_category"><input type="checkbox"> Сингапур</li>
+                        <li class="in_category"><input type="checkbox"> Брюсель</li>
+                        <li class="in_category"><input type="checkbox"> Англия</li>
                     </ul>
+                    <ul type="none" class="category"> Состав
+
+                    </ul>
+                    <ul type="none" class="category"> По весу
+
+                    </ul>
+
+                </div>
+                <div class="card_1">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="star"></div>
+                            <div class="number">4.7</div>
+                        </div>
+                        <div class="heart"></div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="image/Tea_1.png">
+                    </div>
+                    <div class="name_tea">Шоу Мэй </div>
+                    <div class="text_tea">Черный чай <br>Очень легкий чай с тонким ароматом, имеет сладковатый вкус с
+                        легкой кислинкой.
+                    </div>
+                    <div class="price">100 гр. / 15 BYR</div>
+                    <div class="button">
+                        <div class="button_text">В корзину</div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
 
         <div class="footer">
             <div> <img src="image/Logo_white.png" style="padding-top: 70px; padding-left: 90px;"> </div>
-            <ul type="none" style="padding-top: 115px; padding-left:90px; display: flex; gap: 15px;">
-                <li><img src="image/Instagram.png"></li>
-                <li><img src="image/Twitter.png"></li>
-                <li><img src="image/YouTube.png"></li>
-                <li><img src="image/Facebook.png"></li>
-            </ul>
-            <ul type="none" style="padding-top: 65px; padding-left:90px;"> Информация
-                <li>Доставка и оплата</li>
-                <li>Отзывы</li>
-                <li>О магазине</li>
-                <li>Контакты</li>
-            </ul>
+            <div>
+                <ul type="none" style="padding-top: 115px; padding-left:90px; display: flex; gap: 15px;">
+                    <li><img src="image/Instagram.png"></li>
+                    <li><img src="image/Twitter.png"></li>
+                    <li><img src="image/YouTube.png"></li>
+                    <li><img src="image/Facebook.png"></li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none" style="padding-top: 65px; padding-left:90px;"> Информация
+                    <li>Доставка и оплата</li>
+                    <li>Отзывы</li>
+                    <li>О магазине</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
             <ul>
                 <li></li>
                 <li></li>
