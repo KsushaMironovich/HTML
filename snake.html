@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #cc0000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Очки: <span>0</span></h2>
+
+    <canvas id="canv" width="600px" height="600px"></canvas>
+
+    <script type="text/javascript">
+
+        // Переменные
+        cells = 30;
+        cellSize = 20;
+
+        // позиция еды
+        foodX = 20;
+        foodY = 20;
+
+        //направление движения
+        moveX = 0;
+        moveY = 0;
+
+        // движение 
+        trail = [];
+
+        // хвост
+        tail = 3;
+
+        //позиция игрока
+        playerX = 15;
+        playerY = 15;
+
+        scoreBlock = document.querySelector('h2 span');
+
+
+        window.onload = function () {
+            canv = document.querySelector('#canv');
+            ctx = canv.getContext('2d');
+
+            start();
+        }
+
+        function start() {
+
+            //позиция игрока
+            playerX = 15;
+            playerY = 15;
+
+            //направление движения
+            moveX = 0;
+            moveY = 0;
+
+            scoreBlock.innerText = 0;
+
+            let background = new Image();
+            background.src = "start.png";
+            background.onload = function () {
+                ctx.drawImage(background, 0, 0);
+                ctx.fillStyle = 'black';
+                ctx.font = "50px monospace";
+                ctx.textAlign = 'center';
+                ctx.fillText('Start', 300, 500);
+            }
+
+            canv.onclick = function () {
+                document.addEventListener('keydown', move);
+                gameTimer = setInterval(game, 60);
+                canv.onclick = null;
+            }
+
+        }
+
+        function game() {
+            playerX += moveX;
+            playerY += moveY;
+
+            if (playerX < 0 || playerY < 0 || playerY > cells || playerX > cells) {
+                endGame();
+            }
+
+            ctx.fillStyle = "#422857";
+            ctx.fillRect(0, 0, canv.width, canv.height);
+
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(foodX * cellSize, foodY * cellSize, cellSize, cellSize);
+
+            ctx.fillStyle = '#fe3c70';
+            for (let i = 0; i < trail.length; i++) {
+                ctx.fillRect(trail[i].x * cellSize, trail[i].y * cellSize, cellSize, cellSize);
+                if (playerX == trail[i].x && playerY == trail[i].y) {
+                    tail = 3;
+                    scoreBlock.innerText = 0;
+                }
+            }
+
+            trail.push({ x: playerX, y: playerY });
+
+            if (playerX == foodX && playerY == foodY) {
+                tail++;
+                scoreBlock.innerText = +scoreBlock.innerText + 1;
+                foodX = Math.floor(Math.random() * cells);
+                foodY = Math.floor(Math.random() * cells);
+            }
+
+            while (trail.length > tail) {
+                trail.shift();
+            }
+        }
+
+        // окончание игры 
+
+        function endGame() {
+            clearInterval(gameTimer);
+            setTimeout(function () {
+
+                ctx.fillStyle = 'red';
+                ctx.fillRect(0, 0, canv.width, canv.height);
+                ctx.fillStyle = '#ffffff';
+                ctx.textAlign = "center";
+                ctx.fint = "50px monospae";
+
+                ctx.font = '50px monospace';
+                ctx.fillText('End Game!', 300, 300);
+            }, 100);
+            canv.onclick = start;
+        }
+
+        function move(e) {
+            switch (e.keyCode) {
+                case 37:
+                    moveX = -1;
+                    moveY = 0;
+                    break;
+                case 38:
+                    moveX = 0;
+                    moveY = -1;
+                    break;
+                case 39:
+                    moveX = 1;
+                    moveY = 0;
+                    break;
+                case 40:
+                    moveX = 0;
+                    moveY = 1;
+                    break;
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
